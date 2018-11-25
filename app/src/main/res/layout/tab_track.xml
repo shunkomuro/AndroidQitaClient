@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabTrackScroller"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fadingEdgeLength="0dp"
+    android:scrollbars="none">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/tabTrack"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:divider="?android:attr/dividerVertical"
+            android:dividerPadding="12dp"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+        </LinearLayout>
+
+        <View
+            android:id="@+id/tabIndicator"
+            android:layout_width="60dp"
+            android:layout_height="8dp"
+            android:layout_gravity="bottom"
+            android:background="#aa33b5e5"/>
+
+    </FrameLayout>
+
+</HorizontalScrollView>
+<!-- TODO fadingEdgeLength, scrollbars の動作を確認する -->
+<!-- TODO tabTrack のデザイン (android:divider の見直し) -->
+<!-- TODO tabTrack の高さの調整 -->
